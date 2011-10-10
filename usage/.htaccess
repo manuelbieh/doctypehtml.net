@@ -1,0 +1,7 @@
+AuthUserFile /www/htdocs/w006633a//dev/dthtml/usage//.htpasswd
+AuthGroupFile /dev/null
+AuthName ByPassword
+AuthType Basic
+<Limit GET POST>
+require user w006633a
+</Limit>

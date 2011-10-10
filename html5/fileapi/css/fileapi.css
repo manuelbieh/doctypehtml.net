@@ -1,0 +1,27 @@
+#dropbox {
+	background-image: url(../../images/folder.png);
+	background-repeat: no-repeat;
+	background-position: 86px 86px; 
+	height: 300px;
+	margin: auto;
+	width: 300px;
+}
+
+#dropbox.droppable {
+	background-image: url(../../images/folder.png);
+	background-repeat: no-repeat;
+	background-position: -442px 88px; 
+}
+
+#progress {
+	border: 1px solid #999;
+	height: 15px;
+	margin: 0 auto 30px auto;
+	width: 200px;
+}
+
+#progress span {
+	background: #B2BDCE;
+	display: inline-block;
+	height: 100%;
+}

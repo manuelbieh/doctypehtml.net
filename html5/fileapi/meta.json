@@ -1,0 +1,13 @@
+{
+	"demo": {
+		"title": "FileAPI + FileReader + Fileupload",
+		"subtitle":"(using Mozilla's proprietary sendAsBinary())"
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "true",
+		"safari": "false",
+		"opera": "false",
+		"chrome": "false"
+	}
+}

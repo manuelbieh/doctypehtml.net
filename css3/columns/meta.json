@@ -1,0 +1,13 @@
+{
+	"demo": {
+		"title": "Columns",
+		"subtitle":""
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "true",
+		"safari": "true",
+		"opera": "true",
+		"chrome": "true"
+	}
+}

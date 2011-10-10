@@ -1,0 +1,12 @@
+{
+	"demo": {
+		"title": "navigator.onLine"
+	},
+	"compatibility": {
+		"ie": "true",
+		"firefox": "true",
+		"safari": "true",
+		"opera": "true",
+		"chrome": "true"
+	}
+}

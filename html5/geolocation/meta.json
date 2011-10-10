@@ -1,0 +1,13 @@
+{
+	"demo": {
+		"title": "Geolocation API",
+		"subtitle":""
+	},
+	"compatibility": {
+		"ie": "true",
+		"firefox": "true",
+		"safari": "true",
+		"opera": "true",
+		"chrome": "true"
+	}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>calc() function</title>
+
+	<link href="[[url]]/css/calc.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<div id="content">
+
+	<h2>calc() function</h2>
+
+	<p>You can use the CSS calc() function to subtract e.g. the padding or border-width of an element from its actual width.</p>
+
+	<div class="outer">
+
+		<p id="intro">This ist the outer div with a total width of <span>100%</span>. All inner divs have 8px padding both left and right as well as an 2px border around. All inner divs also have <code>float: left</code>.</p>
+
+		<section class="inner calc25"><code>width: calc(<br /> 25%<br /> - 8px*2<br /> - 2px*2<br /> - 4px*2<br />)</code></section>
+		<section class="inner calc60"><code>width: calc(<br /> 60%<br /> - 8px*2<em> /* (padding left/right) */</em><br /> - 2px*2 <em>/* (border left/right) */</em><br /> - 4px*2 <em>/* (margin left/right) */</em><br />)</code></section>
+		<section class="inner calc15"><code>width: calc(<br /> 15%<br /> - 8px*2<br /> - 2px*2<br /> - 4px*2<br />)</code></section>
+
+		<br style="clear: both;" />
+
+		<p class="widthselection"><strong>Set outer width:</strong> <span class="link">100%</span>, <span class="link">90%</span>, <span class="link">75%</span>, <span class="link">65%</span>, <span class="link">530px</span>
+
+		<script>
+		$(function() {
+			$('.widthselection span').bind('click', function() {
+				$('.outer').css({width: $(this).text()});
+				$('#intro span').text($(this).text());
+			});
+		});
+		</script>
+
+	</div>
+
+</div>
+
+</body>
+</html>

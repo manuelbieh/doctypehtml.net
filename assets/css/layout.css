@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: white;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 160%;
+}
+
+header, footer, section {
+	display: block;
+}
+
+header {
+	background: url(../images/header.jpg);
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	font-family: "Maven Pro", "Trebuchet MS", Arial, sans-serif;
+	height: 150px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+header h1 {
+	bottom: 8px;
+	left: 16px;
+	color: #ff5400;
+	font-size: 40px;
+	line-height: 50px;
+	position: absolute;
+	text-shadow: 1px 1px 0 #000;
+}
+
+header a {
+	color: #ff5400;
+}
+
+footer {
+	margin: auto;
+	width: 760px;
+}
+
+footer iframe {
+	vertical-align: middle;
+	height: 20px !important;
+}
+
+h1, h2, h3 {
+	font-family: "Maven Pro", "Trebuchet MS", Arial, Sans-Serif;
+	margin: 1em 0 0.5em 0;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+input {
+	padding: 3px 5px;
+}
+
+button {
+	padding: 8px !important;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	text-align: left;
+}
+
+thead tr {
+	background: #9eafbd;
+}
+
+td, th {
+	border-top: 1px solid #9eafbd;
+	border-bottom: 1px solid #9eafbd;
+	padding: 5px;
+}
+
+ul, ol, dl {
+	margin: 0 0 0 1.5em;
+}
+
+p {
+	margin: 1em 0;
+}
+
+[contenteditable]:hover {
+	background: white;
+	cursor: pointer;
+}
+
+[contenteditable]:focus {
+	background: white;
+	cursor: text;
+}
+
+#wrapper {
+	background: #eee;
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-o-border-radius: 16px;
+	margin: 30px auto 0 auto;
+	padding: 10px;
+	position: relative;
+	width: 760px;
+}
+
+#nosupport {
+	display: none;
+}
+
+.support {
+	background: url(../images/browsers.png) no-repeat;
+	display: inline-block;
+	height: 24px;
+	width: 23px;
+}
+
+.coldemo {
+	width: 75%;
+}
+
+.colsupport {
+	width: 25%;
+}
+
+.msie {
+	background-position: 0 0;
+}
+
+.firefox {
+	background-position: -24px 0;
+}
+
+.safari {
+	background-position: -48px 0;
+}
+
+.chrome {
+	background-position: -72px 0;
+}
+
+.opera {
+	background-position: -96px 0;
+}
+
+.msie.false {
+	background-position: 0 -24px;
+}
+
+.firefox.false {
+	background-position: -24px -24px;
+}
+
+.safari.false {
+	background-position: -48px -24px;
+}
+
+.chrome.false {
+	background-position: -72px -24px;
+}
+
+.opera.false {
+	background-position: -96px -24px;
+}
+
+.green {
+	background: #0f0;
+	padding: 3px;
+}
+
+.red {
+	background: #f00;
+	padding: 3px;
+}
+
+.col50 {
+	float: left;
+	width: 50%;
+}
+
+
+#DOMWindow {
+	left: 5%;
+	height: 500px;
+	max-height: 90%;
+	overflow: hidden !important;
+	width: 90% !important;
+}
+

@@ -1,0 +1,12 @@
+{
+	"demo": {
+		"title": "Desktop Notifications"
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "false",
+		"safari": "false",
+		"opera": "false",
+		"chrome": "true"
+	}
+}

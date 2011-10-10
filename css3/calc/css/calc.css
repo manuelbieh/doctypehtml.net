@@ -1,0 +1,41 @@
+.outer {
+	border: 2px solid #CCC;
+	width: 100%;
+	width: -moz-calc(100% - 4px);
+	width: calc(100% - 4px);
+}
+
+.outer p {
+	margin: 0;
+	padding: 8px;
+}
+
+.inner {
+	border: 2px solid #CCC;
+	background: #F4F4FF;
+	float: left;
+	margin: 4px;
+	padding: 8px;
+}
+
+.calc15 {
+	width: 10%; /* Fallback for browsers that don't support the calc() function */
+	width: -moz-calc(15% - 8px*2 - 2px*2 - 4px*2);
+	width: calc(15% - 8px*2 - 2px*2 - 4px*2);
+}
+
+.calc25 {
+	width: 20%; /* Fallback for browsers that don't support the calc() function */
+	width: -moz-calc(25% - 8px*2 - 2px*2 - 4px*2);
+	width: calc(25% - 8px*2 - 2px*2 - 4px*2);
+}
+
+.calc60 {
+    width: 55%; /* Fallback for browsers that don't support the calc() function */
+	width: -moz-calc(60% - 8px*2 - 2px*2 - 4px*2);
+	width: calc(60% - 8px*2 - 2px*2 - 4px*2);
+}
+
+.link {
+	cursor: pointer;
+}

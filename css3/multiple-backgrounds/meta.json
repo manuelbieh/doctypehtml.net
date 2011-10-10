@@ -1,0 +1,13 @@
+{
+	"demo": {
+		"title": "Multiple Background Images",
+		"subtitle":""
+	},
+	"compatibility": {
+		"ie": "true",
+		"firefox": "true",
+		"safari": "true",
+		"opera": "true",
+		"chrome": "true"
+	}
+}

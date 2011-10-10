@@ -1,0 +1,25 @@
+.evenodd tbody tr:nth-child(even) {
+	background: #fff;
+}
+
+.evenodd tbody tr:nth-child(odd) {
+	background: #bbb;
+}
+
+.evenodd tbody tr:nth-child(odd):hover, 
+.evenodd tbody tr:nth-child(even):hover {
+	background: #7EA7C9;
+}
+
+.evenodd td, .evenodd th {
+	border: 1px solid #666;
+	cursor: pointer;
+}
+
+.col1, .col2 {
+	width: 30%;
+}
+
+.col3 {
+	width: 40%;
+}

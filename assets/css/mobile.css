@@ -1,0 +1,49 @@
+body {
+	max-width: 100%;
+}
+
+#wrapper {
+	border-radius: 16px;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-o-border-radius: 16px;
+	margin: 10px auto 0 auto;
+	position: relative;
+	padding: 10px 0;
+	width: 100%;
+	max-width: 780px;
+}
+
+#wrapper > * {
+	margin: 0 10px;
+}
+
+h1 {
+	font-size: 24px !important;
+	line-height: 28px !important;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+.coldemo {
+	width: 70%;
+}
+
+.colsupport {
+	width: 30%;
+}
+
+footer {
+	width: 100%;
+	max-width: 780px;
+}

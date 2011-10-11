@@ -26,10 +26,10 @@ body {
 
 <?php
 
-include "Curl.php";
+include "../lib/Curl.php";
 
 $url = $_GET['url'];
-$url = str_replace('http://doctypehtml.net/', '', $url);
+$url = str_replace('http://' . $_SERVER['SERVER_NAME'] . '/', '', $url);
 
 $suffix = explode('.', $url);
 $suffix = end($suffix);
@@ -53,7 +53,7 @@ libxml_use_internal_errors(true);
 //$file = file_get_contents('http://doctypehtml.net/' . $url);
 $curl = new Modules_Curl();
 
-$file = $curl->connect('http://doctypehtml.net/' . $url)->setOption(CURLOPT_FOLLOWLOCATION, 1)->output();
+$file = $curl->connect('http://' . $_SERVER['SERVER_NAME'] . '/' . $url)->setOption(CURLOPT_FOLLOWLOCATION, 1)->output();
 $status = $curl->info(CURLINFO_HTTP_CODE);
 
 if($status < 400) {
@@ -70,7 +70,7 @@ if($status < 400) {
 		foreach($scripts AS $script) {
 			$src = ltrim($script->getAttribute('src'), '/');
 			if(strpos($src, 'http') !== 0 && $src != '') {
-				$script->setAttribute('src', 'http://doctypehtml.net/' . $src);
+				$script->setAttribute('src', 'http://' . $_SERVER['SERVER_NAME'] . '/' . $src);
 			}
 		}
 
@@ -78,7 +78,7 @@ if($status < 400) {
 		foreach($styles AS $style) {
 			$href = ltrim($style->getAttribute('href'), '/');
 			if(strpos($href, 'http') !== 0 && $href != '') {
-				$style->setAttribute('href', 'http://doctypehtml.net/' . $href);
+				$style->setAttribute('href', 'http://' . $_SERVER['SERVER_NAME'] . '/' . $href);
 			}
 		}
 
@@ -86,7 +86,7 @@ if($status < 400) {
 		foreach($links AS $link) {
 			$href = ltrim($link->getAttribute('href'), '/');
 			if(strpos($href, 'http') !== 0 && $href != '') {
-				$link->setAttribute('href', 'http://doctypehtml.net/' . $href);
+				$link->setAttribute('href', 'http://' . $_SERVER['SERVER_NAME'] . '/' . $href);
 			}
 		}
 
@@ -98,7 +98,7 @@ if($status < 400) {
 
 		$html = htmlentities($tidy, ENT_COMPAT, 'UTF-8');
 
-		$html = preg_replace('((src|href)=&quot;http://doctypehtml.net/(.*)&quot;)U', '$1=&quot;<a href="?url=http://doctypehtml.net/$2">http://doctypehtml.net/$2</a>&quot;', $html);
+		$html = preg_replace('((src|href)=&quot;http://' . $_SERVER['SERVER_NAME'] . '/(.*)&quot;)U', '$1=&quot;<a href="?url=http://' . $_SERVER['SERVER_NAME'] . '/$2">http://' . $_SERVER['SERVER_NAME'] . '/$2</a>&quot;', $html);
 
 		echo $html;
 

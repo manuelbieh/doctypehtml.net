@@ -1,6 +1,6 @@
 <?php
 
-class Modules_Curl {
+class Curl {
 
 	public $options = array();
 	protected $output;

@@ -1,5 +1,5 @@
 #dropbox {
-	background-image: url(../../images/folder.png);
+	background-image: url(/assets/images/folder.png);
 	background-repeat: no-repeat;
 	background-position: 86px 86px; 
 	height: 300px;
@@ -8,7 +8,7 @@
 }
 
 #dropbox.droppable {
-	background-image: url(../../images/folder.png);
+	background-image: url(/assets/images/folder.png);
 	background-repeat: no-repeat;
 	background-position: -442px 88px; 
 }

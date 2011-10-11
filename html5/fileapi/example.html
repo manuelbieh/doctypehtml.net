@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+	<title>FileAPI + FileReader</title>
+
+	<script src="[[url]]/js/fileapi.js" type="text/javascript"></script>
+	<link href="[[url]]/css/fileapi.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<section id="content">
+
+	<h2>Drag and Drop Fileupload</h2>
+
+	<p>Drag files from your desktop onto the folder to upload it.</p>
+
+	<script>
+	//<![CDATA[
+	$(function() {
+		if(typeof window.FileReader === 'undefined') {
+			$('#fileapi').hide();
+			$('#nosupport').show();
+		}
+	});
+	//]]>
+	</script>
+
+	<div id="fileapi">
+		<div id="dropbox"></div>
+		<div id="progress"><span></span></div>
+		<p id="nosupport">Your browser is not supported yet, sorry!</p>
+	</div>
+
+
+</section>
+
+
+</body>
+</html>

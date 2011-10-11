@@ -9,7 +9,7 @@ function tableSection($tableTpl, $rowTpl, $section, $headline) {
 
 		$data = $tableRow->flatArray($data);
 		$tableRow->replace($data, $data);
-		$tableRow->replace('link', dirname($metaFile));
+		$tableRow->replace('link', rtrim(dirname($metaFile), "/\r\n\t") . '.html');
 		$tableTpl->append('rows', $tableRow->render());
 
 	}

@@ -1,0 +1,13 @@
+{
+	"demo": {
+		"title": "&lt;details&gt; and &lt;summary&gt; element",
+		"subtitle":""
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "false",
+		"safari": "false",
+		"opera": "false",
+		"chrome": "true"
+	}
+}

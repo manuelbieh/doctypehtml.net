@@ -1,0 +1,12 @@
+{
+	"demo": {
+		"title": "Input types + required attribute"
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "true",
+		"safari": "false",
+		"opera": "false",
+		"chrome": "true"
+	}
+}

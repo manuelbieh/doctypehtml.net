@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+	<title>contenteditable attribute</title>
+
+</head>
+
+<body>
+
+<section id="content">
+
+	<h2>contenteditable attribute</h2>
+
+	<p id="notsupport" style="display: none;">Sorry, your browser seems to not support contenteditable</p>
+
+	<div id="supported">
+
+		<div class="editable" contenteditable="true" id="contenteditable-sample">
+
+			<p>This text is editable within your browser. You can edit <b>any</b> text on a page with the <code>contenteditable</code> attribute set to <em>true</em>. Just click the text to see a text cursor and start editing.</p>
+
+			<ol>
+				<li>Even lists</li>
+				<li>Another list item</li>
+				<li>And another one</li>
+			</ol>
+
+		</div>
+
+		<button id="contenteditable-show">Show content</button>
+
+	</div>
+
+	<script>
+	$(function() {
+
+		if(!!'isContentEditable' in document.createElement('span')) {
+			$('#notsupport').show();
+			$('#supported').hide();
+		}
+
+		$('#contenteditable-show').bind('click', function() {
+			alert('Current pagecontent is: ' + $('#contenteditable-sample').html());
+		});
+	});
+	</script>
+
+</section>
+
+
+</body>
+</html>

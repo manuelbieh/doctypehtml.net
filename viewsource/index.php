@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
 <title>View-Source</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
-
+<meta charset="utf-8" />
 <script src="sh_main.min.js"></script>
 <script src="lang/sh_html.min.js"></script>
 <script src="lang/sh_javascript.min.js"></script>
-
 <script src="lang/sh_css.min.js"></script>
 <style>
 body {
@@ -51,7 +45,7 @@ switch($suffix) {
 libxml_use_internal_errors(true);
 
 //$file = file_get_contents('http://doctypehtml.net/' . $url);
-$curl = new Modules_Curl();
+$curl = new Curl();
 
 $file = $curl->connect('http://' . $_SERVER['SERVER_NAME'] . '/' . $url)->setOption(CURLOPT_FOLLOWLOCATION, 1)->output();
 $status = $curl->info(CURLINFO_HTTP_CODE);
@@ -61,6 +55,7 @@ if($status < 400) {
 	if($type == 'html') {
 
 		$dom = new DOMDocument();
+		$dom->encoding = 'UTF-8';
 		$dom->formatOutput = true;
 		$dom->preserveWhiteSpace = true;
 		$dom->loadHTML($file);
@@ -90,12 +85,11 @@ if($status < 400) {
 			}
 		}
 
-
 		$output = $dom->saveHTML();
+
 		$config = array('indent' => TRUE, 'output-html' => TRUE, 'wrap'=>200, 'indent-spaces'=>4);
 
 		$tidy = tidy_parse_string($output, $config, 'UTF8');
-
 		$html = htmlentities($tidy, ENT_COMPAT, 'UTF-8');
 
 		$html = preg_replace('((src|href)=&quot;http://' . $_SERVER['SERVER_NAME'] . '/(.*)&quot;)U', '$1=&quot;<a href="?url=http://' . $_SERVER['SERVER_NAME'] . '/$2">http://' . $_SERVER['SERVER_NAME'] . '/$2</a>&quot;', $html);

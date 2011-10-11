@@ -7,7 +7,7 @@
 		"ie": "true",
 		"firefox": "true",
 		"safari": "true",
-		"opera": "true",
-		"chrome": "true"
+		"chrome": "true",
+		"opera": "false"
 	}
 }

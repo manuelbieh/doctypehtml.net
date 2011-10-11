@@ -1,5 +1,5 @@
 <?php
-header("Content-Type: text/html; charset=utf-8");
+#header("Content-Type: text/html; charset=utf-8");
 libxml_use_internal_errors(true);
 
 include "inc/functions.php";
@@ -7,7 +7,7 @@ include "lib/Template.php";
 
 $reqURL = htmlspecialchars(strip_tags($_SERVER['REQUEST_URI']), ENT_NOQUOTES);
 $docRoot = $_SERVER['DOCUMENT_ROOT'];
-$domainURL = '//' . $_SERVER['SERVER_NAME'];
+$domainURL = 'http://' . $_SERVER['SERVER_NAME'];
 $path = realpath($docRoot . DIRECTORY_SEPARATOR . str_replace(array('index.html', '.html'), '', $reqURL)); // Path to example folder
 $exampleFile = $path . DIRECTORY_SEPARATOR . 'example.html'; // File containing the actual example
 
@@ -33,13 +33,13 @@ if($reqURL === '/') {
 	$templateFile = str_replace('<title>' . $title[1] . '</title>', '', $templateFile);
 
 	preg_match('|<head>(.*)</head>|Usm', $templateFile, $head);
-	preg_match('|<div id="content">(.*)</div>|Usm', $templateFile, $content);
+	preg_match('#<(div|section) id="content">(.*)</(div|section)>#sm', $templateFile, $content);
 
 	$tpl = new Template('./assets/templates/sub.html');
 
 	$tpl->replace('head', $head[1])
 		->replace('title', $title[1])
-		->replace('content', $content[1]);
+		->replace('content', $content[2]);
 
 } else {
 

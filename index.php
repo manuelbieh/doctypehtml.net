@@ -35,7 +35,12 @@ if($reqURL === '/') {
 	preg_match('|<head>(.*)</head>|Usm', $templateFile, $head);
 	preg_match('#<(div|section) id="content">(.*)</(div|section)>#sm', $templateFile, $content);
 
-	$tpl = new Template('./assets/templates/sub.html');
+	$exampleTpl = $path . DIRECTORY_SEPARATOR . '/template.html';
+	if(!is_file($exampleTpl)) {
+		$tpl = new Template('./assets/templates/sub.html');
+	} else {
+		$tpl = new Template($exampleTpl);
+	}
 
 	$tpl->replace('head', $head[1])
 		->replace('title', $title[1])

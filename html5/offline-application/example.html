@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+	<title>Offline web application</title>
+
+	<link href="[[url]]/css/offline-application.css" rel="stylesheet" type="text/css" />
+	<script src="[[url]]/js/offline-application.js"></script>
+
+</head>
+
+<body>
+
+<section id="content">
+
+	<h2>Offline web application</h2>
+
+	<p>If your browser asks for permission to save content to your local hard drive: accept it! Go offline (File → Work offline in Firefox or Airplane Mode on iPhone/iPad) and reload the page. Everything should still look the same.</p>
+
+	<div class="online">
+
+		<button id="buy">Buy ticket</button>
+		
+		<div id="buyForm" class="popup">
+
+			<h3>Buy new ticket</h3>
+
+			<p>
+				<label for="name">Your name</label>
+				<input type="text" name="name" id="name" />
+			</p>
+			<p>
+				<label for="amount">How many?</label>
+				<select name="amount" id="amount">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</p>
+			<p>
+				<button id="save">Save</button>
+				<button id="cancel">Cancel</button>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div class="offline">
+		<p>Sorry, you have to be online to order a new Ticket</p>
+	</div>
+
+	<p><button id="view">View my Tickets</button> | <button id="delete">Delete tickets</button></p>
+
+	<div id="viewTickets" class="popup">
+
+		<h3>My Tickets</h3>
+		<div id="myTickets"></div>
+		<button class="close">Close</button>
+
+	</div>
+
+</section>
+
+
+</body>
+</html>

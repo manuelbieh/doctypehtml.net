@@ -14,7 +14,7 @@ All the meta information goes here. The title/subtitle to be shown on the homepa
 
 ### DEMO-TEMPLATE/example.html
 
-This is the place for all your demo markup. Everything inside of your documents &lt;head&gt; and inside of the &lt;section id="content"&gt;&lt;/section&gt; will be visible in the output. Don't forget to link your external stylesheets and javascripts if you're using some. You can use the `[[url]]` placeholder. It will be replaced by the current demo's URL. For example: if you want to link a stylesheet in `/html5/mydemo/css/mydemo.css` you should use `[[url]]/css/mydemo.css`. Just have a look at the existing demos.
+This is the place for all your demo markup. Everything inside of your documents `<head></head>` and inside of the `<section id="content"></section>` will be visible in the output. Don't forget to link your external stylesheets and javascripts if you're using some. You can use the `[[url]]` placeholder. It will be replaced by the current demo's URL. For example: if you want to link a stylesheet in `/html5/mydemo/css/mydemo.css` you should use `[[url]]/css/mydemo.css`. Just have a look at the existing demos.
 
 ### DEMO-TEMPLATE/css and DEMO-TEMPLATE/js
 

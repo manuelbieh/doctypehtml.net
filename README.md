@@ -4,4 +4,16 @@ This is a small demonstration of what can be done with HTML5 and CSS3. Not every
 
 ## NEW: Add your own demos
 
-Fork this repository, use the `DEMO-TEMPLATE` folder in `/assets` to create your own awesome demo, put it in the `/HTML5` or `/CSS3` folder and send a pull request. In case your demo is cool I will publish it on <a href="http://doctypehtml.net">http://doctypehtml.net</a>!
+Fork this repository, use the `DEMO-TEMPLATE` folder in `/assets` to create your own awesome demo, put it in the `/HTML5` or `/CSS3` folder and send a pull request. In case your demo is cool I will publish it on http://doctypehtml.net
+
+### DEMO-TEMPLATE/meta.js
+
+All the meta information goes here. The title/subtitle to be shown on the homepage, browser compatibility information and – honour to whom honour is due – your name and URL.
+
+### DEMO-TEMPLATE/example.html
+
+This is the place for all your demo markup. Everything inside of your documents &lt;head&gt; and inside of the &lt;section id="content"&lt;&lt;/section&gt; will be visible in the output. Don't forget to link your external stylesheets and javascripts if you're using some. You can use the [[url]] placeholder. It will be replaced by the current demo's URL. For example: if you want to link a stylesheet in `/html5/mydemo/css/mydemo.css` you should use `[[url]]/css/mydemo.css`. Just have a look at the existing demos.
+
+### DEMO-TEMPLATE/css and DEMO-TEMPLATE/js
+
+This is where your external stylesheets and javascripts go. They should have the same name as your demo folder. So in case your demo folder is called `mydemo` they should (but don't have to) be named `css/mydemo.css` and `js/mydemo.js`.

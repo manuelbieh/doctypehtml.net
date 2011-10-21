@@ -1,0 +1,13 @@
+{
+	"demo": {
+		"title": "CSS Card deck with flip effect", // will be linked
+		"subtitle":"Mixed CSS techniques" // won't be linked
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "false",
+		"safari": "true",
+		"chrome": "true",
+		"opera": "false"
+	}
+}

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Transformations</title>
+
+	<link href="[[url]]/css/generated-content.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<section id="content">
+
+	<h2>Card deck – css transformations</h2>
+
+	<p>Demo shows various css stuff. Transformations (currently Webkit only), :after/:before pseudo elements, css generated content, multiple background images with gradients, etc …</p>
+
+	<div class="card" data-symbol="♠">
+		<figure class="front">
+			<div class="numbers">
+				<span>2</span>
+				<span>2</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pc"></span>
+				<span class="p64 pc"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+
+	<div class="card" data-symbol="♠">
+		<figure class="front">
+			<div class="numbers">
+				<span>3</span>
+				<span>3</span>
+				<em></em>
+			</div>
+			<div class="symbols" >
+				<span class="p1 pc"></span>
+				<span class="p8 pc"></span>
+				<span class="p64 pc"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♠">
+		<figure class="front">
+			<div class="numbers">
+				<span>4</span>
+				<span>4</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p64 pl"></span>
+				<span class="p64 pr"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♣">
+		<figure class="front">
+			<div class="numbers">
+				<span>5</span>
+				<span>5</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p8 pc"></span>
+				<span class="p64 pl"></span>
+				<span class="p64 pr"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♠">
+		<figure class="front">
+			<div class="numbers">
+				<span>6</span>
+				<span>6</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p8 pl"></span>
+				<span class="p8 pr"></span>
+				<span class="p64 pl"></span>
+				<span class="p64 pr"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♦">
+		<figure class="front">
+			<div class="numbers">
+				<span>7</span>
+				<span>7</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p4 pc"></span>
+				<span class="p8 pl"></span>
+				<span class="p8 pr"></span>
+				<span class="p64 pl"></span>
+				<span class="p64 pr"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♣">
+		<figure class="front">
+			<div class="numbers">
+				<span>8</span>
+				<span>8</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p4 pc"></span>
+				<span class="p8 pl"></span>
+				<span class="p8 pr"></span>
+				<span class="p32 pc"></span>
+				<span class="p64 pl"></span>
+				<span class="p64 pr"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♠">
+		<figure class="front">
+			<div class="numbers">
+				<span>9</span>
+				<span>9</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p4 pl"></span>
+				<span class="p4 pr"></span>
+				<span class="p8 pc"></span>
+				<span class="p16 pl"></span>
+				<span class="p16 pr"></span>
+				<span class="p64 pr"></span>
+				<span class="p64 pl"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♥">
+		<figure class="front">
+			<div class="numbers">
+				<span>10</span>
+				<span>10</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pl"></span>
+				<span class="p1 pr"></span>
+				<span class="p2 pc"></span>
+				<span class="p4 pl"></span>
+				<span class="p4 pr"></span>
+				<span class="p16 pl"></span>
+				<span class="p16 pr"></span>
+				<span class="p32 pc"></span>
+				<span class="p64 pr"></span>
+				<span class="p64 pl"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+
+	<div class="card" data-symbol="♥">
+		<figure class="front">
+			<div class="numbers">
+				<span>A</span>
+				<span>A</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="ace"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♣">
+		<figure class="front">
+			<div class="numbers">
+				<span>J</span>
+				<span>J</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pr"></span>
+				<span class="j"></span>
+				<span class="p64 pl"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♥">
+		<figure class="front">
+			<div class="numbers">
+				<span>Q</span>
+				<span>Q</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pr"></span>
+				<span class="q"></span>
+				<span class="p64 pl"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+	<div class="card" data-symbol="♠">
+		<figure class="front">
+			<div class="numbers">
+				<span>K</span>
+				<span>K</span>
+				<em></em>
+			</div>
+			<div class="symbols">
+				<span class="p1 pr"></span>
+				<span class="k"></span>
+				<span class="p64 pl"></span>
+			</div>
+		</figure>
+		<figure class="back"></figure>
+	</div>
+
+</section>
+
+
+</body>
+</html>

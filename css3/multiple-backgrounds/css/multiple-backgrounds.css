@@ -27,48 +27,48 @@
 
 #download {
 	background: url(../../../assets/images/icon-download.png) no-repeat center left,
-		url(../../images/arrowright.png) no-repeat center right;
+		url(../../../assets/images/arrowright.png) no-repeat center right;
 }
 
 #jpg {
 	background: url(../../../assets/images/icon-jpeg.png) no-repeat center left,
-		url(../../images/arrowright.png) no-repeat center right;
+		url(../../../assets/images/arrowright.png) no-repeat center right;
 }
 
 #mail {
 	background: url(../../../assets/images/icon-mail.png) no-repeat center left,
-		url(../../images/arrowright.png) no-repeat center right;
+		url(../../../assets/images/arrowright.png) no-repeat center right;
 }
 
 #wordpress {
 	background: url(../../../assets/images/icon-wordpress.png) no-repeat center left,
-		url(../../images/arrowright.png) no-repeat center right;
+		url(../../../assets/images/arrowright.png) no-repeat center right;
 }
 
 #download:hover {
 	background-color: #ccc;
-	background-image: url(../../../assets/images/icon-download.png), url(../../images/arrowright.png);
+	background-image: url(../../../assets/images/icon-download.png), url(../../../assets/images/arrowright.png);
 	background-position: left center, right center;
 	background-repeat: no-repeat;
 }
 
 #jpg:hover {
 	background-color: #ccc;
-	background-image: url(../../../assets/images/icon-jpeg.png), url(../../images/arrowright.png);
+	background-image: url(../../../assets/images/icon-jpeg.png), url(../../../assets/images/arrowright.png);
 	background-position: left center, right center;
 	background-repeat: no-repeat;
 }
 
 #mail:hover {
 	background-color: #ccc;
-	background-image: url(../../../assets/images/icon-mail.png), url(../../images/arrowright.png);
+	background-image: url(../../../assets/images/icon-mail.png), url(../../../assets/images/arrowright.png);
 	background-position: left center, right center;
 	background-repeat: no-repeat;
 }
 
 #wordpress:hover {
 	background-color: #ccc;
-	background-image: url(../../../assets/images/icon-wordpress.png), url(../../images/arrowright.png);
+	background-image: url(../../../assets/images/icon-wordpress.png), url(../../../assets/images/arrowright.png);
 	background-position: left center, right center;
 	background-repeat: no-repeat;
 }

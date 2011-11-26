@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Contextmenu – doctypehtml.net</title>
+
+	<link href="[[url]]/css/contextmenu.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<section id="content">
+
+	<section contextmenu="imagemenu">
+
+		<p>Right-click the image to rotate and resize</p>
+
+		<p style="text-align: center;">
+			<img src="[[url]]/images/html5.png" alt="HTML5" id="menudemo">
+		</p>
+
+		<menu type="context" id="imagemenu">
+			<menuitem label="rotate" onclick="rotate()" icon="[[url]]/images/arrow_rotate_clockwise.png"></menuitem>
+			<menuitem label="resize" onclick="resize()" icon="[[url]]/images/image-resize.png"></menuitem>
+			<menu label="Nested menu">
+				<menuitem label="twitter" onclick="alert('not yet')"></menuitem>
+				<menuitem label="facebook" onclick="alert('not yet')"></menuitem>
+			</menu>
+
+		</menu>
+
+	</section>
+
+	<section contextmenu="countmenu">
+
+		<h2>Non-Interactive context menu</h2>
+
+		<p>Right-click anywhere in here to see context menu</p>
+
+		<menu type="context" id="countmenu">
+			<menuitem class="wordcount" label="count words"></menuitem>
+		</menu>
+
+		<p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</section>
+
+	<section id="interactive" contextmenu="countmenuinteractive">
+
+		<h2>Interactive context menu</h2>
+
+		<p>Right-click anywhere in here to see context menu - if you have nothing selected, the "count words" menu is not active.</p>
+
+		<menu type="context" id="countmenuinteractive">
+			<menuitem class="wordcount" label="count words"></menuitem>
+		</menu>
+
+		<p class="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</section>
+
+	<script src="[[url]]/js/contextmenu.js"></script>
+
+</section>
+
+</body>
+</html>

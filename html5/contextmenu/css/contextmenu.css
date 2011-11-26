@@ -1,0 +1,30 @@
+p.demo {
+	margin: 1em;
+	border: 1px solid #999;
+	background: #ccc;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+.contextmenu #menudemo, .contextmenu .demo {
+	cursor: context-menu;
+}
+
+#counter{
+	position: absolute;
+	background: rgba(0,0,0,0.7);
+	padding:.5em 1em;
+	color: #fff;
+	font-weight:bold;
+	border-radius: 5px;
+	-moz-transition: opacity 0.4s;
+}
+
+#counter.hide{
+	opacity: 0;
+}
+
+#menudemo { -moz-transition: 0.2s; width:200px;}
+#menudemo.rotate { -moz-transform: rotate(90deg); }
+#menudemo.resize { -moz-transform: scale(0.7); }
+#menudemo.resize.rotate { -moz-transform: scale(0.7) rotate(90deg); }

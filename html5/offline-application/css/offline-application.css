@@ -1,0 +1,20 @@
+.popup {
+	background: white;
+	border: 8px solid #aaa;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	display: none;
+	left: 50px;
+	min-height: 200px;
+	max-height: 350px;
+	padding: 16px;
+	position: absolute;
+	overflow: auto;
+	top: 50px;
+	width: 300px;
+}
+
+ul {
+	margin-left: 2em;
+}

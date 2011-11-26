@@ -196,6 +196,15 @@ p {
 	padding: 3px;
 }
 
+
+.contributor {
+	border-top: 1px solid #ddd;
+	display: block;
+	font-size: 74%;
+	margin-top: 2px;
+	padding-top: 2px;
+}
+
 .col50 {
 	float: left;
 	width: 50%;
@@ -210,3 +219,7 @@ p {
 	width: 90% !important;
 }
 
+
+#___plusone_0 {
+vertical-align: middle !important;
+}

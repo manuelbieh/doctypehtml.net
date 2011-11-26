@@ -8,5 +8,9 @@
 		"safari": "true",
 		"opera": "true",
 		"chrome": "true"
+	},
+	"credits": {
+		"author":"Manuel",
+		"url":"http://www.manuelbieh.com"
 	}
 }

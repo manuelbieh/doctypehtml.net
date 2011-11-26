@@ -1,0 +1,198 @@
+.card {
+	color: black;
+	float: left;
+	font-size: 36px;
+	font-family: georgia, times, serif;
+	height: 360px;
+	margin: 0.5em;
+	position: relative;
+	width: 285px; 
+	-webkit-perspective: 800;
+}
+
+.card figure {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.5s;
+	-webkit-transform-style: preserve-3d;
+	border-radius: 24px;
+	border: 1px solid #333;
+	box-shadow: 5px 5px 15px #666;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.card figure.front {
+	background: -moz-radial-gradient(45px 45px 45deg, circle cover, #fff, #ddd );
+	background: -webkit-gradient( radial, 45 45, 90, 45 45, 360, from(#fff), to(#ddd) );
+	z-index: 64;
+}
+
+.card figure.back {
+	z-index: 32;
+	-webkit-transform: rotateY(180deg);
+	background-color: #293677;
+	background-image: 
+		-webkit-repeating-linear-gradient(30deg, transparent, transparent 10px, rgba(255,255,255,.5) 10px, rgba(255,255,255,.5) 20px),
+		-webkit-repeating-linear-gradient(-60deg, transparent, transparent 10px, rgba(255,255,255,.5) 10px, rgba(255,255,255,.5) 20px);
+
+}
+
+.card[data-symbol="♥"] figure.back,
+.card[data-symbol="♦"] figure.back {
+	background-color: #9E0909;
+}
+
+.card:hover figure.front {
+	-webkit-transform-origin: center center;
+	-webkit-transform: rotateY( -180deg );
+}
+
+.card:hover figure.back {
+	-webkit-transform-origin: center center;
+	-webkit-transform: rotateY( 0 );
+}
+
+.card[data-symbol="♥"],
+.card[data-symbol="♦"] {
+	color: red;
+}
+
+.card .numbers span, .card .numbers em:before, .card .numbers em:after, .card .symbols span {
+	position: absolute;
+}
+
+.card .numbers span {
+	display: inline-block;
+	text-align: center;
+	letter-spacing: -0.1em;
+	width: 1em;
+}
+
+.card .numbers span:nth-child(1) {
+	bottom: 14px;
+	right: 10px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.card .numbers span:nth-child(2) {
+	top: 14px;
+	left: 10px;
+}
+
+.card .numbers em:before {
+	bottom: 50px;
+	right: 20px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.card .numbers em:after {
+	top: 50px;
+	left: 20px;
+}
+
+.card .symbols span {
+	font-size: 112px;
+	line-height: 56px;
+}
+
+.pl {
+	left: 45px;
+}
+
+[data-symbol="♦"] .pc {
+	left: 115px;
+}
+
+[data-symbol="♠"] .pc {
+	left: 110px;
+}
+
+[data-symbol="♥"] .pc {
+	left: 110px;
+}
+
+[data-symbol="♣"] .pc {
+	left: 105px;
+}
+
+.pr {
+	right: 45px;
+}
+
+.card .symbols .p1 {
+	top: 25px;
+}
+.card .symbols .p2 {
+	top: 70px;
+}
+.card .symbols .p4 {
+	top: 100px;
+}
+.card .symbols .p8 {
+	top: 140px;
+}
+.card .symbols .p16 {
+	top: 195px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.card .symbols .p32 {
+	top: 230px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.card .symbols .p64 {
+	top: 275px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.card .symbols .ace, .j, .q, .k {
+	top: 140px;
+	left: 85px;
+	font-size: 196px;
+}
+
+.card[data-symbol="♠"] .symbols span:after,
+.card[data-symbol="♠"] .numbers em:after,
+.card[data-symbol="♠"] .numbers em:before {
+	content: "♠";
+}
+.card[data-symbol="♣"] .symbols span:after,
+.card[data-symbol="♣"] .numbers em:after,
+.card[data-symbol="♣"] .numbers em:before {
+	content: "♣";
+}
+.card[data-symbol="♦"] .symbols span:after,
+.card[data-symbol="♦"] .numbers em:after,
+.card[data-symbol="♦"] .numbers em:before {
+	content: "♦";
+	color: red;
+}
+.card[data-symbol="♥"] .symbols span:after,
+.card[data-symbol="♥"] .numbers em:after,
+.card[data-symbol="♥"] .numbers em:before {
+	content: "♥";
+	color: red;
+}
+
+.card .symbols span.j:after {
+	content: "♝";
+}
+
+.card .symbols span.q:after {
+	content: "♛";
+}
+
+.card .symbols span.k:after {
+	content: "♚";
+}

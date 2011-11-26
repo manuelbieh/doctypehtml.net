@@ -1,0 +1,12 @@
+{
+	"demo": {
+		"title": "Offline web application"
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "true",
+		"safari": "true",
+		"chrome": "true",
+		"opera": "true"
+	}
+}

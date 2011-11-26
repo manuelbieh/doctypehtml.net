@@ -1,0 +1,17 @@
+{
+	"demo": {
+		"title": "Title of your demo", // will be linked
+		"subtitle":"Subtitle" // won't be linked
+	},
+	"compatibility": {
+		"ie": "false",
+		"firefox": "false",
+		"safari": "false",
+		"chrome": "false",
+		"opera": "false"
+	},
+	"credits": {
+		"author":"Your name",
+		"url":"Your website or github URL"
+	}
+}
